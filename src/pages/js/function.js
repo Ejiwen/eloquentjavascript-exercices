@@ -27,3 +27,11 @@ const countBs = s => {
   }
   return count;
 };
+
+let count = 0;
+const countChar = (s, c) => {
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === c) count++;
+  }
+  return count;
+};
