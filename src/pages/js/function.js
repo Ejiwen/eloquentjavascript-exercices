@@ -20,3 +20,10 @@ console.log(isEven(-2));
 // → numbre is negative
 
 /* Bean counting */
+let count = 0;
+const countBs = s => {
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === "B") count++;
+  }
+  return count;
+};
