@@ -18,3 +18,5 @@ console.log(isEven(75));
 // → false
 console.log(isEven(-2));
 // → numbre is negative
+
+/* Bean counting */
