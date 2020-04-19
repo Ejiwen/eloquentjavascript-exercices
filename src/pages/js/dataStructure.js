@@ -1,4 +1,4 @@
-/* The sum of a range */
+/************************* The sum of a range *************************/
 const range = (start, end) => {
   let rangeTab = [];
   for (let i = start; i <= end; i++) rangeTab.push(i);
@@ -22,3 +22,20 @@ const range = (start, end, step = 1) => {
 
 console.log(range(5, 2, -1));
 // → [5, 4, 3, 2]
+
+/************************* Reversing an array *************************/
+const reverseArray = arr => {
+  let newArr = [];
+  for (let i = arr.length - 1; i >= 0; i--) newArr.push(arr[i]);
+  return newArr;
+};
+
+console.log(reverseArray([1, 2, 3, 4, 5]));
+// → ["C", "B", "A"];
+
+/*
+let arrayValue = [1, 2, 3, 4, 5];
+reverseArrayInPlace(arrayValue);
+console.log(arrayValue);
+// → [5, 4, 3, 2, 1]
+*/
