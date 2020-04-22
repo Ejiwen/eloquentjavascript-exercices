@@ -77,3 +77,5 @@ const reverseArrayInPlace = arr => {
 };
 
 console.log(reverseArrayInPlace(["A", "B", "C"]));
+
+/********* Implemente a list via an array *********/
