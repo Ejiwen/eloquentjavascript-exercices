@@ -40,6 +40,19 @@ console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
 */
 
+/******* My Solution *******/
+const reverseArrayInPlace = arr => {
+  for (let i = 0; i < arr.length / 2; i++) {
+    let old = arr[arr.length - 1 - i];
+    arr[arr.length - 1 - i] = arr[i];
+    arr[i] = old;
+  }
+
+  return arr;
+};
+
+console.log(reverseArrayInPlace(["A", "B", "C"]));
+
 /***** Book Solution *****/
 function reverseArray(array) {
   let output = [];
