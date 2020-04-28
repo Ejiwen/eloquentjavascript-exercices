@@ -92,3 +92,13 @@ const reverseArrayInPlace = arr => {
 console.log(reverseArrayInPlace(["A", "B", "C"]));
 
 /********* Implemente a list via an array *********/
+
+/******* A List Exercise*******/
+
+const arrayToList = (array) => {
+  let list= null;
+  for(let i=array.length -1; i>=0; i--) {
+    list= {value: array[i], rest:list}
+  }
+  return list;
+}
