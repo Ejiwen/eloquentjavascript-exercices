@@ -102,3 +102,14 @@ const arrayToList = (array) => {
   }
   return list;
 }
+
+/******* listToArray Exercise*******/
+const listToArray = (list) => {
+  let tab = [];
+   while(list !== null){
+   tab.push(list.value);
+   list = list.rest;
+   }
+
+  return tab
+}
