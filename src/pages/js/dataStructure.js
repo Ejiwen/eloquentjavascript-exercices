@@ -118,3 +118,14 @@ const listToArray = (list) => {
 const prepend = (item, list) => {
   return {value:item, rest:list};
 }
+
+
+/******* nth Function *******/
+function nth(list,position){
+  if(position === 0) return list.value; 
+  else return nth(list.rest, --position);
+
+}
+
+console.log(nth(arrayToList([10, 20, 30]), 2));
+// → 20
