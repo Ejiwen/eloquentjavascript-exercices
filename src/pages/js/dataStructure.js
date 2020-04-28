@@ -113,3 +113,8 @@ const listToArray = (list) => {
 
   return tab
 }
+
+/******* prepend Function *******/
+const prepend = (item, list) => {
+  return {value:item, rest:list};
+}
