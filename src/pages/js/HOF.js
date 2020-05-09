@@ -41,6 +41,10 @@ function every(array, test) {
   return true;
 }
 
+function every2(array, predicate) {
+  return !array.some(element => !predicate(element));
+}
+
 console.log(every([1, 3, 5], n => n < 10));
 // → true
 console.log(every([2, 1, 16], n => n < 10));
